@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Black jack</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Black jack, try to make 21</h1>
+
+    </header>
+    <main>
+        <section class="dealer d-flex">
+            <h2 id="dealerCurCount">000</h2>
+            <div class="dealerShowCard card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Dealer shown card</div>
+                <div class="card-body">
+                    <h1 class="card-title">Secondary card title</h1>
+                </div>
+            </div>
+            <div class="dealerCoveredCard card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Dealer cover card</div>
+                <div class="card-body">
+                    <h1 class="card-title">Secondary card title</h1>
+                </div>
+            </div>
+            
+        </section>
+        <h1 id="betAmount">000</h1>
+
+        <section class="player d-flex">
+            <h2 id="playerCurCount">000</h2>
+            <div class="playerCardOne card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">PlayerCard 1</div>
+                <div class="card-body">
+                    <h1 class="card-title">Secondary card title</h1>
+                </div>
+            </div>
+            <div class="playerCardTwo card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">PlayerCard 2</div>
+                <div class="card-body">
+                    <h1 class="card-title">Secondary card title</h1>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <button id="hitButton">Hit</button>
+            <button id="standButton">Stand</button>
+            <button id="splitButton">Split</button>
+            <button id="doubleDownButton">Double Down</button>
+        </div>
+        <div>
+            <h5>Chipcount: <span id="chipCount">1000</span></h5>
+            <h5>Whats your bet</h5>
+            <button id="submitButton">Submit</button>
+            <input id="betInput">
+        </div>
+        <h1 id="winorloss"></h1>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+        <script src="assets/script.js"></script>
+</body>
+
+</html>
